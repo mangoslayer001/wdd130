@@ -1,0 +1,24 @@
+:root{
+    
+    --primary-color: #8EDCE6;
+    --secondary-color: #A7B0CA;
+    --accent1-color: #D5DCF9;
+    --accent2-color: #725E54;
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lato', sans-serif;
+    --text-color: #333333;
+    --background-color: #ffffff;
+}
+h1 {
+    color: var(--primary-color);
+}
+  
+button {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+  
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
