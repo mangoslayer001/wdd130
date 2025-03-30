@@ -32,14 +32,27 @@ p {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header using new grid layout */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--primary-color);
 }
+header .logo {
+    grid-column: 1;
+}
+/*updated nav with horizantal layout*/ 
+header nav {
+    grid-column: 2;
+    justify-self: end; /* Align nav to the right */
+    
+    /* Flexbox for horizontal layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
 
 header nav a {
     margin: 0 1rem;
@@ -95,6 +108,61 @@ header nav a {
     border-radius: 5px;
 }
 
+/*history section*/
+.history {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+  
+.history article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+}
+  
+
+  
+.history-col img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+.adventures {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+  
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+  
+.adventure-grid figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.adventure-grid figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+    
 /* Sections */
 main section {
     padding: 2rem;
@@ -112,12 +180,19 @@ section img {
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     color: var(--accent2-color);
 }
 
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .socialmedia a {
     text-decoration: none;
     margin: 0 10px;
