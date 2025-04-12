@@ -228,6 +228,12 @@ footer {
     border: none;
     border-radius: 10px;
 }
+.map-embed {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
 
 /* Employee Profile Section */
 .team {
