@@ -1,6 +1,6 @@
 :root {
     --primary-color: #8EDCE6;
-    --secondary-color: #A7B0CA;
+    --secondary-color: #6B7290;
     --accent1-color: #D5DCF9;
     --accent2-color: #725E54;
     --heading-font: 'Playfair Display', serif;
@@ -311,7 +311,7 @@ footer {
 
 .contact-form button {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
     border: none;
     padding: 0.75rem;
     font-size: 1rem;
